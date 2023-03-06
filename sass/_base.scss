@@ -1,0 +1,22 @@
+$respond: 22.7rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-weight: 400;
+  line-height: 1.6rem;
+
+  background-image: linear-gradient(to right bottom, #cbc3e3, #ba55d3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

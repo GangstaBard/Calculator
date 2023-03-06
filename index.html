@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en ru">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Rubik:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.6.0/math.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator__screen">
+        <p class="calculator__input"></p>
+        <p class="calculator__output"></p>
+      </div>
+
+      <div class="calculator__panel">
+        <button
+          onclick="purge();"
+          type="button"
+          class="calculator__btn btn-big"
+        >
+          AC
+        </button>
+
+        <button
+          onclick="give_argument(this.id), display();"
+          id="%"
+          type="button"
+          class="calculator__btn"
+        >
+          %
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="/"
+          type="button"
+          class="calculator__btn"
+        >
+          ÷
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="7"
+          type="button"
+          class="calculator__btn"
+        >
+          7
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="8"
+          type="button"
+          class="calculator__btn"
+        >
+          8
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="9"
+          type="button"
+          class="calculator__btn"
+        >
+          9
+        </button>
+        <button
+          id="+"
+          type="button"
+          class="calculator__btn"
+          onclick="give_argument(this.id), display();"
+        >
+          +
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="4"
+          type="button"
+          class="calculator__btn"
+        >
+          4
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="5"
+          type="button"
+          class="calculator__btn"
+        >
+          5
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="6"
+          type="button"
+          class="calculator__btn"
+        >
+          6
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="-"
+          type="button"
+          class="calculator__btn"
+        >
+          -
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="1"
+          type="button"
+          class="calculator__btn"
+        >
+          1
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="2"
+          type="button"
+          class="calculator__btn"
+        >
+          2
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="3"
+          type="button"
+          class="calculator__btn"
+        >
+          3
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="*"
+          type="button"
+          class="calculator__btn"
+        >
+          x
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="0"
+          type="button"
+          class="calculator__btn"
+        >
+          0
+        </button>
+        <button
+          onclick="give_argument(this.id), display();"
+          id="."
+          type="button"
+          class="calculator__btn"
+        >
+          .
+        </button>
+
+        <button
+          onclick="calculate()"
+          id="btn-result"
+          type="button"
+          class="calculator__btn btn-big"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
